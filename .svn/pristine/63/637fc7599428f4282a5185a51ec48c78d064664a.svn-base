@@ -1,0 +1,46 @@
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { ProductService } from './../../services/product-service';
+import { ProductPage } from '../product/product';
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+  public barcode:String = "";
+  public product:any;
+  public errorMessage:any;
+  public username:string;
+  public prodcode:string = "";
+  public lat:any;
+  public long:any;
+
+  constructor(public nav: NavController, 
+    private barcodeScanner: BarcodeScanner,    
+    public ps: ProductService) {
+      this.username = localStorage.getItem("userName");      
+  } 
+
+  search(){
+    this.ps.getItemsbycode(this.prodcode).subscribe(
+      product => this.product = product,
+      error =>  this.errorMessage = <any>error);  
+   }   
+
+   openprod(prod){ 
+     this.nav.push(ProductPage,{prod:prod});
+   }
+
+  scan(){
+    this.barcodeScanner.scan().then((barcodeData) => {
+      this.barcode = barcodeData.text;
+      this.ps.getItemsbyBarcode(this.barcode).subscribe(
+        product => this.product = product,
+        error =>  this.errorMessage = <any>error);  
+     }, (err) => {
+       // An error occurred
+     });
+  }
+}

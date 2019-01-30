@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\capture.xml",
+        "source": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\encode.xml",
+        "source": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\history.xml",
+        "source": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\history.xml",
+        "source": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\encode.xml",
+        "source": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\capture.xml",
+        "source": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\capture.xml"
+    }
+]

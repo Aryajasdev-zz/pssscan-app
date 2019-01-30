@@ -1,0 +1,18 @@
+<ion-content padding>
+    <div class="welcome-bottom" padding>
+     <img src="https://www.partysuperstores.co.uk/content/images/partysuperstores-logo-300.png" />
+     <ion-list>          
+        <ion-item>
+          <ion-label>UserID</ion-label>
+          <ion-input type="text" [(ngModel)]="userid"></ion-input>
+        </ion-item>
+      </ion-list>
+      <div padding>
+        <button ion-button full (click)="login()">Sign In</button>        
+      </div>
+      <div *ngIf="user">
+        <div>{{user?.username}} user does not found</div>
+      </div>     
+    </div>
+  </ion-content>
+  

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.3\7d7f60c4783872861222166f6164215f8951c7b1\common-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7d7f60c4783872861222166f6164215f8951c7b1">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\common-1.0.3_f686fc9fc1b95d77f8320dc9da0c5ba2f911ed61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="233d88c6f961d2a84758dfe27b7af61318190c7b">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-11.8.0_4d062b512b2e9224d8da734c008a01b8e08100dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f0f484b1a18c1676984dfea4e572ceffda2f3b78">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-11.8.0_87f48927a2d8ef66bdda1d02682ad93e6e1d903d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.0.2\b9ef4342c934a1a8b107506273dc8061662a322\support-annotations-27.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-27.0.2_53a9f362430775e5b9c62e1a838ee52b53303e99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25c8cb628374f9a2d59ff9e1172753751e9a9f84">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-27.0.2_aee1b9f803cad2fadc418b8d629288c47c43d5ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-compat-27.0.2_234f0a65aef4d291c210ebf612dffe4939c6c2ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.8.0_2e24639b48092f95b28a508ff81ad36f0a6b1715.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\org.apache.cordova\CordovaLib\6.3.0\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="df1a7a6af20c4eca090c1f535b77951ef6025bfb">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-6.3.0-debug_b99feb5b45e4f55bd7472049071af953d788fee8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\barcodescanner\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bd90253b55403aaf6ed1c913904d8bc1f19e6ff4">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-barcodescanner_6dcaff3600aabaeadfcd74d2dc7d2453e3aa14eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-27.0.2_a03b39399122c3b42bdfb09e9769f4e08d771ce3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7cc5473b9cf4ea159a263cd477fb3ecb2987b96">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\android.arch.lifecycle-runtime-1.0.3_5637c1f03bcc308df68a0ff8dc63ce781a2fbc09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="601ebd8fa027a3dad924ffa1cb14689ced5aa436">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-11.8.0_70b868f6b209fca1a72da7dd504491ae3f575856.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-27.0.2_ad7e235164f5d30fdfeafae82c03d7d4efd8f763.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ac2ce6027755bcf49442e70597bec0feb9064f68">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-27.0.2_b45800a30bd24481fd0d25048200b2f864818e87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\common-1.0.0_580f7dbce637797ea0bade943d0f6f2ea9b25129.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bcd0bcdef85b31a656af76e39c0c95ce70800772">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-27.0.2_f4d792ce3d5ff05bbe7665adcb5e26dd9aee3cca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="C:\websites\Mobile Apps\pssscan\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.8.0_26d7134d042851a2a6730eb7a2e15b6b6212d38e.jar" />
+    </item>
+
+</items>

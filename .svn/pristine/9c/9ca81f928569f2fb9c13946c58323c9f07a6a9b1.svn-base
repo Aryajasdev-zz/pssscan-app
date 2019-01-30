@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\launcher_icon.png",
+        "source": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\drawable-xhdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\launcher_icon.png",
+        "source": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\drawable-xhdpi\\launcher_icon.png"
+    }
+]

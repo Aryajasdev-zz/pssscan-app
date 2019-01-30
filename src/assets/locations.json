@@ -1,0 +1,25 @@
+{
+	"locations":
+	[
+		{
+	    	"title" : "Sutton WareHouse",         
+	    	"latitude" : 51.362984,
+	    	"longitude" : -0.193777
+		},
+		{
+	    	"title": "Sutton Shop",	    
+	    	"latitude": 51.364178,
+	    	"longitude": -0.194482
+  		},
+		{
+	    	"title": "Clapham Shop",        
+	    	"latitude": 51.463947,
+	    	"longitude": -0.167236
+		},
+		{
+	    	"title": "Croydon Shop",          
+        	"latitude": 51.37538,
+        	"longitude": -0.102031
+		}
+   ]
+}	

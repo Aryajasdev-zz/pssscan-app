@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{username}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="scan()">
+        <ion-icon name="barcode"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Product Details</h3>  
+  <ion-list>          
+    <ion-item>
+      <ion-label>Product Code</ion-label>
+      <ion-input type="text" [(ngModel)]="prodcode"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div>
+    <button ion-button full (click)="search()">Search</button>
+  </div>      
+  <ion-card *ngFor="let prod of product">    
+      <ion-item>
+        <ion-avatar item-start>
+          <img (click)="openprod(prod)" src="{{prod?.img}}">
+        </ion-avatar>
+        <h2 (click)="openprod(prod)">{{prod?.name}}</h2>
+        <p>{{prod?.descr}}</p>
+      </ion-item>    
+      <img (click)="openprod(prod)" src="{{prod?.img}}">    
+      <ion-card-content>
+        <p>{{prod?.pssdes}}</p>
+      </ion-card-content>    
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="pricetag"></ion-icon>
+            <div>{{prod?.shopprice | currency:'GBP':true}}</div>
+          </button>
+        </ion-col>        
+      </ion-row>  
+      <ion-row *ngFor="let sc of prod?.supplycodes">
+        <ion-col>
+            <ion-note>
+            <div>{{sc?.barcode}}</div>
+            </ion-note>          
+          </ion-col>
+          <ion-col>
+              <ion-note>
+              <div>{{sc?.code}}</div>
+              </ion-note>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+                {{sc?.sname}}
+            </ion-note>
+          </ion-col>    
+        </ion-row>      
+    </ion-card>
+</ion-content>

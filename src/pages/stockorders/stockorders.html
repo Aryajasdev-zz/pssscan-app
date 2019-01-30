@@ -1,0 +1,99 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{username}}</ion-title>          
+    </ion-navbar>
+</ion-header>
+    
+<ion-content padding>    
+    <h3>Stock Orders</h3>         
+    <ion-card>  
+        <ion-item>
+            <ion-label>Order From</ion-label>
+            <ion-select [(ngModel)]="locationfrom" (ionChange)="changelocationfrom($event)">
+                <ion-option value="1">Warehouse</ion-option>
+                <ion-option value="2">Clapham</ion-option>
+                <ion-option value="3">Sutton</ion-option>
+                <ion-option value="4">Croydon</ion-option>
+            </ion-select>        
+        </ion-item>   
+        <ion-item>
+            <ion-label>Order To</ion-label>
+            <ion-select [(ngModel)]="locationto" (ionChange)="changelocationto($event)">
+                <ion-option value="1">Warehouse</ion-option>
+                <ion-option value="2">Clapham</ion-option>
+                <ion-option value="3">Sutton</ion-option>
+                <ion-option value="4">Croydon</ion-option>
+            </ion-select>        
+        </ion-item>   
+        <ion-item>
+            <button ion-button block (click)="showorders()">Show Orders</button>
+        </ion-item>                   
+    </ion-card>
+    <ion-card *ngFor="let prod of stockorders">    
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="{{prod?.img}}">
+          </ion-avatar>
+          <h2>{{prod?.name}}</h2>
+          <p>{{prod?.descr}}</p>
+        </ion-item>    
+        <img src="{{prod?.img}}">         
+        <ion-row>
+          <ion-col>
+            <ion-note>
+              <div>Ordered By</div>
+            </ion-note>          
+          </ion-col>
+          <ion-col>
+            <ion-note>
+              <div>{{prod?.username}}</div>
+            </ion-note>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+              <ion-note>
+                <div>{{prod?.supplier}}</div>
+              </ion-note>          
+            </ion-col>
+            <ion-col>
+              <ion-note>
+                <div>{{prod?.prodcode}}</div>
+              </ion-note>
+            </ion-col>
+        </ion-row>    
+        <ion-row>
+            <ion-col>
+              <ion-note>
+                <div>Size</div>
+              </ion-note>          
+            </ion-col>
+            <ion-col>
+              <ion-note>
+                <div>{{prod?.size}}</div>
+              </ion-note>
+            </ion-col>
+        </ion-row>    
+        <ion-row>
+            <ion-col>
+              <ion-note>
+                <div>Qty : {{prod?.qty}}</div>
+              </ion-note>          
+            </ion-col>
+            <ion-col>
+              <ion-note>
+                <div>Date: {{prod?.entrydate | date: 'mediumDate'}}</div>
+              </ion-note>
+            </ion-col>
+        </ion-row>      
+        <ion-row>
+          <ion-item>
+            <button ion-button block (click)="stockfill(prod)">Stock Fill</button>
+        </ion-item>           
+      </ion-row>      
+      </ion-card>
+</ion-content>
+      

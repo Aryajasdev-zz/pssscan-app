@@ -1,0 +1,75 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { Camera } from '@ionic-native/camera';
+import { HttpModule, JsonpModule } from '@angular/http';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Toast } from '@ionic-native/toast';
+import { Geolocation } from '@ionic-native/geolocation';
+import { GoogleMaps } from '@ionic-native/google-maps';
+
+import { MyApp } from './app.component';
+import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { ProductPage } from '../pages/product/product';
+import { MapPage } from '../pages/map/map';
+import { MaphomePage } from '../pages/maphome/maphome';
+import { MaplistPage } from '../pages/maplist/maplist';
+
+import { ProductService } from '../services/product-service';
+import { UserService } from '../services/user-service';
+import { LocationService } from '../services/location-service';
+import { LocationsService } from '../services/locations-service';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { StockOrderPage } from './../pages/stockorder/stockorder';
+import { StockInPage } from '../pages/stockin/stockin';
+import { StockOutPage } from '../pages/stockout/stockout';
+
+@NgModule({
+  declarations: [
+    MyApp,
+    HomePage,
+    LoginPage,
+    ProductPage,
+    MapPage,
+    MaphomePage,
+    MaplistPage,
+    StockInPage,
+    StockOrderPage,
+    StockOutPage    
+  ],
+  imports: [
+    BrowserModule,HttpModule, JsonpModule, IonicModule.forRoot(MyApp),
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    HomePage,
+    LoginPage,
+    ProductPage,
+    MapPage,
+    MaphomePage,
+    MaplistPage,
+    StockInPage,
+    StockOrderPage,
+    StockOutPage
+  ],
+  providers: [
+    StatusBar,
+    ProductService,
+    UserService,
+    LocationService,
+    LocationsService,
+    SplashScreen,
+    Camera,
+    BarcodeScanner,
+    Toast, 
+    Geolocation,
+    GoogleMaps,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
+})
+export class AppModule {}

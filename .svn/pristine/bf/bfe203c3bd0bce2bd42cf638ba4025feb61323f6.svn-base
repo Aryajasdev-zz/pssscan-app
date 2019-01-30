@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout-ldpi-v4\\capture.xml",
+        "source": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\layout-ldpi\\capture.xml"
+    },
+    {
+        "merged": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout-ldpi-v4\\capture.xml",
+        "source": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\layout-ldpi\\capture.xml"
+    }
+]

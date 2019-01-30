@@ -1,0 +1,53 @@
+import { Component } from '@angular/core';
+import { Http, Headers, RequestOptions } from '@angular/http';
+import { NavController, NavParams } from 'ionic-angular';
+import { ProductService } from './../../services/product-service';
+
+@Component({
+  selector: 'page-stockin',
+  templateUrl: 'stockin.html'
+})
+export class StockInPage {
+    public username:string;
+    public userid:any;
+    public product:any;
+    public supplier:any;
+    public size:any;
+    public location:any;
+    public qty:any;
+    public stock:any;
+    public nl:any;
+    private soUrl = "https://www.partysuperstores.co.uk/api/PostStockin";       
+
+    changesupp(){}
+    changesize(){}
+    changelocation(){}
+
+    constructor(public nav: NavController,           
+        public ps: ProductService,
+        public navParams: NavParams,
+        public http : Http) {  
+          this.product = this.navParams.get('prod');
+          console.log("product :",this.product);       
+          this.userid = localStorage.getItem("userId");
+          this.username = localStorage.getItem("userName");  
+          this.nl = JSON.parse(localStorage.getItem("nearLocation"));     
+          this.location = this.nl.locationid;
+    }
+
+    stockin(prodid){      
+      this.stock = {
+        locationid:this.location, prodid:prodid, sizeid:this.size, 
+        sid: this.supplier, qty: this.qty, userid: localStorage.getItem("userId")
+      };
+      console.log(this.stock);
+      let headers = new Headers();
+      headers.append('Authorization', "Bearer "+ localStorage.getItem("token"));
+      let opts = new RequestOptions();
+      opts.headers = headers;      
+      this.http.post(this.soUrl, this.stock, opts)
+        .map(res => res.json())
+          .subscribe( data => console.log(data)
+        )  
+    }
+}

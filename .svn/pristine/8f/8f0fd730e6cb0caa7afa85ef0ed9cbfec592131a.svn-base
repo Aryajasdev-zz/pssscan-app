@@ -1,0 +1,47 @@
+<ion-header>
+        <ion-navbar>
+            <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <ion-title>{{username}}</ion-title>          
+        </ion-navbar>
+    </ion-header>
+      
+    <ion-content padding>    
+        <h3>Stock Out</h3>         
+        <ion-card>    
+            <ion-item>
+                <ion-avatar item-start>
+                    <img src="{{product?.img}}">
+                </ion-avatar>    
+                <h2>{{product?.name}}</h2>        
+                <p>{{product?.descr}}</p>
+            </ion-item>
+            <ion-item>
+                <ion-label>Location</ion-label>
+                <ion-select [(ngModel)]="locationfrom" (ionChange)="changelocation()">
+                    <ion-option value="1">Warehouse</ion-option>
+                    <ion-option value="2">Clapham</ion-option>
+                    <ion-option value="3">Sutton</ion-option>
+                    <ion-option value="4">Croydon</ion-option>
+                </ion-select>        
+            </ion-item>   
+            <ion-item>
+                <ion-label>Location From</ion-label>
+                <ion-select [(ngModel)]="locationto" (ionChange)="changelocationto()">
+                    <ion-option value="1">Warehouse</ion-option>
+                    <ion-option value="2">Clapham</ion-option>
+                    <ion-option value="3">Sutton</ion-option>
+                    <ion-option value="4">Croydon</ion-option>
+                </ion-select>        
+            </ion-item>   
+            <ion-item>
+                <ion-label fixed>Enter Quantity</ion-label>
+                <ion-input type="text" [(ngModel)]="qty" value="1"></ion-input>
+            </ion-item>  
+            <ion-item>
+                <button ion-button block (click)="stockin(product)">Stock Fill</button>
+            </ion-item>                   
+        </ion-card>
+    </ion-content>
+      

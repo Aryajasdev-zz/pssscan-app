@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
+        "source": "C:\\websites\\Mobile Apps\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
+        "source": "C:\\myApps2\\pssscan\\platforms\\android\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\raw\\beep.ogg"
+    }
+]

@@ -5,13 +5,14 @@
 *.sw[mnpcod]
 *.log
 *.tmp
+config.xml
 *.tmp.*
 log.txt
 *.sublime-project
 *.sublime-workspace
 .vscode/
 npm-debug.log*
-
+.svn/
 .idea/
 .sourcemaps/
 .sass-cache/
@@ -29,7 +30,7 @@ plugins/android.json
 plugins/ios.json
 www/
 $RECYCLE.BIN/
-
+resources/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate

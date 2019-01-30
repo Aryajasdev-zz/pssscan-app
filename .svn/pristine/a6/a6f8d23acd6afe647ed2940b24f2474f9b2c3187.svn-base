@@ -1,0 +1,51 @@
+<ion-header>
+        <ion-navbar>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>{{username}}</ion-title>          
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>
+        <h3>Product Details</h3>         
+        <ion-card>    
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="{{product?.img}}">
+              </ion-avatar>
+              <h2>{{product?.name}}</h2>
+              <p>{{product?.descr}}</p>
+            </ion-item>    
+            <img src="{{product?.img}}">    
+            <ion-card-content>
+              <p>{{product?.pssdes}}</p>
+            </ion-card-content>    
+            <ion-row>
+              <ion-col>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="pricetag"></ion-icon>
+                  <div>{{product?.shopprice | currency:'GBP':true}}</div>
+                </button>
+              </ion-col>        
+            </ion-row>  
+            <ion-row *ngFor="let sc of product?.supplycodes">
+              <ion-col>
+                  <ion-note>
+                  <div>{{sc?.barcode}}</div>
+                  </ion-note>          
+                </ion-col>
+                <ion-col>
+                    <ion-note>
+                    <div>{{sc?.code}}</div>
+                    </ion-note>
+                </ion-col>
+                <ion-col center text-center>
+                  <ion-note>
+                      {{sc?.sname}}
+                  </ion-note>
+                </ion-col>    
+              </ion-row>      
+          </ion-card>
+      </ion-content>
+      

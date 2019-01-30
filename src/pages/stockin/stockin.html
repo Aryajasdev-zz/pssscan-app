@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{username}}</ion-title>          
+    </ion-navbar>
+</ion-header>
+  
+<ion-content padding>    
+    <h3>Stock In</h3>         
+    <ion-card>    
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="{{product?.img}}">
+            </ion-avatar>    
+            <h2>{{product?.name}}</h2>        
+            <p>{{product?.descr}}</p>
+        </ion-item>    
+        <ion-item>
+            <ion-label>Suppliers</ion-label>
+            <ion-select [(ngModel)]="supplier.sid" (ionChange)="changesupp()">
+                <ion-option *ngFor="let item of product.supplycodes" value="{{item.sid}}">{{item.sname}}</ion-option>
+            </ion-select>        
+        </ion-item>  
+        <ion-item>
+            <ion-label>Sizes</ion-label>
+            <ion-select [(ngModel)]="size.sizeid" (ionChange)="changesize()">
+                <ion-option *ngFor="let item of product.sizes" value="{{item.sizeid}}">{{item.sizename}}</ion-option>
+            </ion-select>        
+        </ion-item>      
+        <ion-item>
+            <ion-label>Location</ion-label>
+            <ion-select [(ngModel)]="location" (ionChange)="changelocation()">
+                <ion-option value="1">Warehouse</ion-option>
+                <ion-option value="2">Clapham</ion-option>
+                <ion-option value="3">Sutton</ion-option>
+                <ion-option value="4">Croydon</ion-option>
+            </ion-select>        
+        </ion-item>   
+        <ion-item>
+            <ion-label fixed>Total Quantity</ion-label>
+            <ion-input type="text" [(ngModel)]="qty" value="0"></ion-input>
+        </ion-item>  
+        <ion-item>
+            <ion-label fixed>Clapham</ion-label>
+            <ion-input type="text" [(ngModel)]="clap" value="0"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Sutton</ion-label>
+            <ion-input type="text" [(ngModel)]="sutt" value="0"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Croydon</ion-label>
+            <ion-input type="text" [(ngModel)]="croy" value="0"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Warehouse</ion-label>
+            <ion-input type="text" [(ngModel)]="ware" value="0"></ion-input>
+        </ion-item>
+        <ion-item>
+            <button ion-button block (click)="stockin(product.prodid)">Stock In</button>
+        </ion-item>                   
+    </ion-card>
+</ion-content>
+  

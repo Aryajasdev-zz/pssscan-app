@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
+import { ProductService } from './../../services/product-service';
+
+@Component({
+  selector: 'page-stockout',
+  templateUrl: 'stockout.html'
+})
+export class StockOutPage {
+    public username:string;
+    constructor(public nav: NavController,           
+        public ps: ProductService,
+        public navParams: NavParams) {         
+          this.username = localStorage.getItem("userName");   
+        }
+}
